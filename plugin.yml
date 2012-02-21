@@ -1,0 +1,11 @@
+name: AmaTree
+main: com.first4ever.amatree.Core
+version: 1.0
+authors:
+  - first4ever
+description: Marre de la deforestation ? Marre de jouer a Tarzan pour couper les arbres ? Ce plugin est fait pour vous !
+permissions:
+    amatree.replanting:
+        description: Replantage automatique des arbres apres X secondes
+    amatree.entiretree:
+        description: Couper les arbres entierement
