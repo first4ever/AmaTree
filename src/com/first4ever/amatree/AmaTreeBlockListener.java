@@ -20,8 +20,8 @@ public class AmaTreeBlockListener implements Listener
 		final byte data = bloc.getData();
 		Player p = e.getPlayer();
 
-		boolean permEntire = Util.hasPerm(p, "amatree.replanting");
-		boolean permReplant =  Util.hasPerm(p, "amatree.entiretree");
+		boolean permEntire = Util.hasPerm(p, "amatree.entiretree");
+		boolean permReplant =  Util.hasPerm(p, "amatree.replanting");
 
 		if (! permEntire && ! permReplant)
 			return;
