@@ -7,5 +7,7 @@ description: Marre de la deforestation ? Marre de jouer a Tarzan pour couper les
 permissions:
     amatree.replanting:
         description: Replantage automatique des arbres apres X secondes
+        default: op
     amatree.entiretree:
         description: Couper les arbres entierement
+        default: op

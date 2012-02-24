@@ -30,9 +30,6 @@ public class Util
 	// Permissions
 	static boolean hasPerm(Player p, String perm)
 	{
-		if (p.isOp())
-			return true;
-
 		if (p.hasPermission(perm))
 			return true;
 
