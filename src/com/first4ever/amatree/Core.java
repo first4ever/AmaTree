@@ -16,13 +16,13 @@ public class Core extends JavaPlugin {
 	@Override
 	public void onDisable()
 	{
-		Util.log("Inactif");
+		Methods.log("Inactif");
 	}
 
 	@Override
 	public void onEnable()
 	{
 		plugin.getServer().getPluginManager().registerEvents(new AmaTreeBlockListener(), this);
-		Util.log("Actif");
+		Methods.log("Actif");
 	}
 }

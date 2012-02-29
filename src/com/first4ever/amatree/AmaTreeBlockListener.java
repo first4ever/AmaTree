@@ -12,6 +12,9 @@ public class AmaTreeBlockListener implements Listener
 	@EventHandler
 	public void onBlockBreak(BlockBreakEvent e)
 	{
+		if (e.isCancelled())
+			return;
+		
 		final Block bloc = e.getBlock();
 
 		if (bloc.getTypeId() != 17)
@@ -20,8 +23,8 @@ public class AmaTreeBlockListener implements Listener
 		final byte data = bloc.getData();
 		Player p = e.getPlayer();
 
-		boolean permEntire = Util.hasPerm(p, "amatree.entiretree");
-		boolean permReplant =  Util.hasPerm(p, "amatree.replanting");
+		boolean permEntire = Methods.hasPerm(p, "amatree.entiretree");
+		boolean permReplant = Methods.hasPerm(p, "amatree.replanting");
 
 		if (! permEntire && ! permReplant)
 			return;
@@ -65,5 +68,3 @@ public class AmaTreeBlockListener implements Listener
 		}
 	}
 }
-
-
